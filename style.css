@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(paint_stains_bubbles_139829_3840x2160.jpg) no-repeat;
+  background-size: cover;
+}
+
+.wrapper{
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.card1{
+  flex: 1;
+  min-width: 320px;
+  padding: 32px;
+  position: relative;
+  min-height: 240px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+h1{
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+
+input{
+  margin-bottom: 16px;
+  font-size: 16px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  width: 100%;
+  max-width: 320px;
+  padding: 16px;
+  color: #c9184a;
+}
+
+.item-row {
+  display: flex;
+  align-items: center;
+}
+
+.item-row p {
+  margin: 0;
+}
+
+.delete-btn {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.btn1, .btn2{
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: white;
+  transition: 0.1s;
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.btn1:hover , .btn2:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.06),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.25),
+    inset -5px -5px 20px rgba(255, 255, 255, 0.25); 
+}
+
+.btn1{
+  margin-right: 8px;
+  margin-left: 32px;
+}
+
+.card2{
+  flex: 2;
+  padding: 32px;
+  min-height: 240px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.card1, .card2{
+  padding: 48px;
+   background-color: rgba(249, 180, 215, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.06),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.25),
+    inset -5px -5px 20px rgba(255, 255, 255, 0.25); 
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: none; 
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.custom-alert {
+  background: rgba(249, 180, 215, 0.55);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3),
+              inset 2px 2px 3px rgba(255, 255, 255, 0.2),
+              inset -2px -2px 3px rgba(255, 255, 255, 0.2);
+  animation: pop 0.3s ease-out;
+}
+
+.custom-alert p {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.custom-alert button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #c9184a;
+  color: white;
+  cursor: pointer;
+}
+.custom-alert button:hover {
+  background: #c9184a;
+}
+
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+

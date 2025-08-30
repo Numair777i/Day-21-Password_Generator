@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card1">
+      <h1>Password Generator</h1>
+      <input class="in" type="text" placeholder="Generate Password">
+      <button class="btn1" onclick="generate()">Generate Password</button>
+      <button class="btn2">Save</button>
+    </div>
+
+    <div class="card2">
+      <h2>Saved Passwords</h2>
+      <div id="saved"></div>
+    </div>
+  </div>  
+
+   <div class="overlay" id="overlay">
+  <div class="custom-alert">
+    <p id="alertMsg">⚠️ Please enter a password first!</p>
+    <button id="okBtn">OK</button>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
